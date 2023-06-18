@@ -1,0 +1,31 @@
+package org.javainterview;
+
+import java.util.Scanner;
+
+public class FactNum {
+	
+	private void num() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the Number: ");
+		int num = scan.nextInt();
+		
+		int fact = 1;
+		for(int i=1; i<=num; i++) {
+			fact=fact*i;
+		}
+		System.out.println("Your Factorial Number is: "+fact);
+	}
+	//main method
+	public static void main(String args[]) {
+		//object creation
+		FactNum info = new FactNum();
+		info.num();
+	}
+
+}
+
+
+Result:
+======
+Enter the Number: 5
+Factorial of your number is: 120
